@@ -2,7 +2,7 @@
 layout: post
 read_time: true
 show_date: true
-title: "Software Design and Implementation on a Novel Multi-Metal 3D Printer"
+title: "Software of a Novel Multi-Metal 3D Printer"
 date: 2021-03-24
 img: posts/20210324/starting_adventure.jpg
 tags: [general blogging, thoughts, life]

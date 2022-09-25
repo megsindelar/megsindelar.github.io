@@ -20,7 +20,7 @@ logo: "/assets/img/branding/portfolio_name.svg"
 # the browser is closed or not)
 night_mode: "auto"
 
-logo-dark: "/assets/img/branding/portfolio_name.svg"
+logo-dark: "/assets/img/branding/portfolio_name_dark.svg"
 highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code highlighter if needed
 
 # Author settings

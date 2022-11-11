@@ -12,7 +12,7 @@ description:
 ---
 The goal of this project was to design and implement a signature-based feedback control system on a LENS Multi-Metal DED Printer.
 "Image"
-  
+
 
 This was my project as a Research Assistant at the University of Wisconsin-Madison. There were three overall stages, the first of which I was tasked with. My stage was to create a feedback control system for the build height of a print, both in-situ and ex-situ, as an initial proof of concept. I was the sole individual on this part of the project. The system layout for the project is shown below.
 
@@ -29,7 +29,9 @@ The external program contains three main subsections. The first is another Lua s
 
 **Measurement Equipment:**
 
-I used a Keyence displacement laser IL-065 to measure the height of each layer in a print. To do this, I first manufactured a mount to attach the sensor to the print head. This is so that every time the print head moved up to create a new layer, the distance sensor moved the same amount. Thus, the goal of my control system was to make sure the distance remained constant every time the print head moved to the next layer. This constraint would then lead to constant layer heights, resulting in a more precise build height.
+I used a Keyence displacement laser IL-065 to measure the height of each layer in a print. To do this, I first manufactured a mount to attach the sensor to the print head. This is so that every time the print head moved up to create a new layer, the distance sensor moved the same amount. Thus, the goal of my control system was to make sure the distance remained constant every time the print head moved to the next layer. This constraint would then lead to constant layer heights, resulting in a more precise build height. I used a C# program to process the data, as specified by the documentation.
+
+I also used a NI USB-6000 A/D converter to read in analog data from the laser distance sensor to the C# program.
 
 
 **Control System:**

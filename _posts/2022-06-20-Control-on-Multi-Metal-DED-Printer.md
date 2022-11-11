@@ -11,8 +11,12 @@ author: Meg Sindelar
 description: 
 ---
 The goal of this project was to design and implement a signature-based feedback control system on a LENS Multi-Metal DED Printer.
+
 "Image"
 
+Software: Lua Script, C#, C
+
+Hardware: LENS MR 7 printer, Keyence IL-065 laser, NI USB-6000 A/D converter
 
 This was my project as a Research Assistant at the University of Wisconsin-Madison. There were three overall stages, the first of which I was tasked with. My stage was to create a feedback control system for the build height of a print, both in-situ and ex-situ, as an initial proof of concept. I was the sole individual on this part of the project. The system layout for the project is shown below.
 
@@ -22,7 +26,7 @@ My stage of the project staged contained three main parts, including software in
 
 **Software Integration:**
 
-This was the main part of my project, where I used the DED Lua API to integrate an external program with the printer code. I interfaced with the printer through the HMI, where I created a simple button for the user that contains underlying Lua script code. This code links directly to the main lua script of the printer.
+This was the main part of my project, where I used the LENS Lua API to integrate an external program with the printer code. I interfaced with the printer through the HMI, where I created a simple button for the user that contains underlying Lua script code. This code links directly to the main lua script of the printer.
 
 The external program contains three main subsections. The first is another Lua script, which is the link between my external program and the printer lua program. The second is a C# program, which reads in data from a laser distance sensor and sends it to the external Lua script. The third is a C program, which I set up to directly communicate with the external lua script. I set this C program up for the PhD student who took over the next stage of the project.
 

@@ -10,11 +10,13 @@ category: theory
 author: Meg Sindelar
 description: 
 ---
-The goal of this project was to design and implement a signature-based feedback control system on a Multi-Metal DED Printer.
+The goal of this project was to design and implement a signature-based feedback control system on a LENS Multi-Metal DED Printer.
 "Image"
   
 
-This was my project as a Research Assistant at the University of Wisconsin-Madison. There were three overall stages, the first of which I was tasked with. My stage was to create a feedback control system for the build height of a print, both in-situ and ex-situ, as an initial proof of concept. I was the sole individual on this part of the project.
+This was my project as a Research Assistant at the University of Wisconsin-Madison. There were three overall stages, the first of which I was tasked with. My stage was to create a feedback control system for the build height of a print, both in-situ and ex-situ, as an initial proof of concept. I was the sole individual on this part of the project. The system layout for the project is shown below.
+
+![Screenshot from 2022-11-10 20-16-17](https://user-images.githubusercontent.com/87098227/201249031-e765f638-ebf7-45ba-a9aa-75ef26c3d1a6.png)
 
 This first project staged contained three main parts, including software integration, measurement equipment, and the control system. 
 
@@ -25,9 +27,12 @@ Software Integration:
 
 
 Measurement Equipment:
-    
+    I used a Keyence displacement laser IL-065 to measure the height of each layer in a print. To do this, I first manufactured a mount to attach the sensor to the print head. This is so that every time the print head moved up to create a new layer, the distance sensor moved the same amount. Thus, the goal of my control system was to make sure the distance remained constant every time the print head moved to the next layer. This constraint would then lead to constant layer heights, resulting in a more precise build height.
 
 
 Control System:
-    I created a simple feedback controller that uses the data from the laser distance sensor and corrects the height error based on the reading of the print head z-axis.
+    I created a simple feedback controller that uses the data from the laser distance sensor to correct the error in height based on the readings of the print head z-axis.
 
+
+Results:
+    Overall, I created an in-situ feedback control system for a LENS Multi-Metal DED Printer. The initial product of this project is a collaborative system between the printer and the user, where the user has to perform multiple steps to implement the control betwwen layers. This creates a bit of a timing inconsistency, which affects the overall results because it leads to different melt pool cooling rates between layers. The PhD student who took over the project after me is continuing my work to try to fully automate the system and implement more parameters into the control system.

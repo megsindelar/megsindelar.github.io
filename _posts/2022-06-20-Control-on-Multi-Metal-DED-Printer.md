@@ -3,10 +3,10 @@ layout: post
 read_time: true
 show_date: true
 title: "Feedback Control on a Multi-Metal DED Printer"
-date: 2021-04-02
+date: 2021-01 - 2021-06
 img: 
-tags: [neural networks, machine learning, artificial intelligence]
-category: theory
+#tags: [neural networks, machine learning, artificial intelligence]
+#category: 
 author: Meg Sindelar
 description: 
 ---
@@ -18,25 +18,25 @@ This was my project as a Research Assistant at the University of Wisconsin-Madis
 
 ![Screenshot from 2022-11-10 20-16-17](https://user-images.githubusercontent.com/87098227/201249031-e765f638-ebf7-45ba-a9aa-75ef26c3d1a6.png)
 
-This first project staged contained three main parts, including software integration, measurement equipment, and the control system. 
+My stage of the project staged contained three main parts, including software integration, measurement equipment, and the control system. 
 
 **Software Integration:**
 
-This was the biggest part of my project, where I used the DED Lua API to integrate an external program with the printer code. I interfaced with the printer through the HMI, where I created a simple button for the user that contains underlying Lua script code. This code links directly to the main lua script of the printer.
+This was the main part of my project, where I used the DED Lua API to integrate an external program with the printer code. I interfaced with the printer through the HMI, where I created a simple button for the user that contains underlying Lua script code. This code links directly to the main lua script of the printer.
 
-The external program contains three main subsections. The first is another Lua script, which is the link between my external program and the printer lua program. The second is a C# program, which reads in data from a laser distance sensor and sends the data to the lua script. The third is a C program, which I set up to directly communicate with the external lua script. I set up the C program for the next PhD student, who took over the next stage of the project.
+The external program contains three main subsections. The first is another Lua script, which is the link between my external program and the printer lua program. The second is a C# program, which reads in data from a laser distance sensor and sends it to the external Lua script. The third is a C program, which I set up to directly communicate with the external lua script. I set this C program up for the PhD student who took over the next stage of the project.
 
 
 **Measurement Equipment:**
 
-I used a Keyence displacement laser IL-065 to measure the height of each layer in a print. To do this, I first manufactured a mount to attach the sensor to the print head. This is so that every time the print head moved up to create a new layer, the distance sensor moved the same amount. Thus, the goal of my control system was to make sure the distance remained constant every time the print head moved to the next layer. This constraint would then lead to constant layer heights, resulting in a more precise build height. I used a C# program to process the data, as specified by the documentation.
+I used a Keyence IL-065 displacement laser to measure the height of each layer in a print. To do this, I first manufactured a mount to attach the sensor to the print head. This is so that every time the print head moved up to create a new layer, the distance sensor moved the same amount. Thus, the goal of my control system was to make sure the distance remained constant each time the print head moved to the next layer. This constraint would then lead to constant layer heights, resulting in a more precise build height. I used a C# program to process the data, as specified by the documentation.
 
-I also used a NI USB-6000 A/D converter to read in analog data from the laser distance sensor to the C# program.
+I also used a NI USB-6000 A/D converter to convert the analog data from the laser distance sensor to digital for the C# program.
 
 
 **Control System:**
 
-I created a simple feedback controller that uses the data from the laser distance sensor to correct the error in height based on the readings of the print head z-axis.
+I created a simple feedback controller that uses the data from the laser distance sensor to correct for the error in height, based on the readings of the print head z-axis. I also set up a model for a PID controller for the next student, which will be implemented when the student tries to control more print parameters.
 
 
 **Results:**

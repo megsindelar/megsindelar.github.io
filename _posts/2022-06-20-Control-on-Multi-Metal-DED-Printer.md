@@ -19,7 +19,9 @@ This was my project as a Research Assistant at the University of Wisconsin-Madis
 This first project staged contained three main parts, including software integration, measurement equipment, and the control system. 
 
 Software Integration:
-    This was the biggest part of my project, where I used the DED Lua API to integrate an external program with the printer code. I interfaced with the printer through the HMI, where I created a simple button for the user that contains underlying Lua script code. This code links directly to the main lua script of the printer. I also created an external program which links to my HMI Lua script. This program contains three main subsections. The first is another Lua script, which is the link between my external program and the printer lua program. The second is a C# program, which reads in data from a laser distance sensor and sends the data to the lua script. The third is a C program, which I set up to directly communicate with the external lua script. I set up the C program for the next PhD student, who was taking over the next stage of the project.
+    This was the biggest part of my project, where I used the DED Lua API to integrate an external program with the printer code. I interfaced with the printer through the HMI, where I created a simple button for the user that contains underlying Lua script code. This code links directly to the main lua script of the printer.
+
+    The external program contains three main subsections. The first is another Lua script, which is the link between my external program and the printer lua program. The second is a C# program, which reads in data from a laser distance sensor and sends the data to the lua script. The third is a C program, which I set up to directly communicate with the external lua script. I set up the C program for the next PhD student, who took over the next stage of the project.
 
 
 Measurement Equipment:

@@ -3,7 +3,7 @@ layout: post
 read_time: true
 show_date: true
 title: "Robotic Pen Locator"
-date: 2022-09-12
+date: 1 #2022-09-12
 img: 
 tags: [copyright, creativity, neural networks, machine learning, artificial intelligence]
 category: opinion

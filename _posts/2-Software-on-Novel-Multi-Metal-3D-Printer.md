@@ -26,4 +26,4 @@ Additionally, to allow the mechanical design team to test multiple parts with my
 
 Overall, my part of the project was a success, where I implemented ___ in time for the initial proof of concept prototype deadline.
 
-The 3D printer is an invention of the (post doc) Buzz ____ from UW-Madison. 
+This multi-metal 3D-printer is an invention of the co-founder and CEO of Dastan Technologies, Behzad “Buzz” Rankouhi, from UW-Madison. 

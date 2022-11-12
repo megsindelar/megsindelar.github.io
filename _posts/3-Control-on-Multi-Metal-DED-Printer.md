@@ -21,7 +21,7 @@ Hardware: LENS MR 7 printer, Keyence IL-065 laser, NI USB-6000 A/D converter
 
 This was my project as a Research Assistant at the University of Wisconsin-Madison. There were three overall stages, the first of which I was tasked with. My stage was to create a feedback control system for the build height of a print, both in-situ and ex-situ, as an initial proof of concept. I was the sole individual on this part of the project. The system layout for the project is shown below.
 
-![Screenshot from 2022-11-10 20-16-17](https://user-images.githubusercontent.com/87098227/201249031-e765f638-ebf7-45ba-a9aa-75ef26c3d1a6.png)
+![Screenshot from 2022-11-10 20-16-17](https://user-images.githubusercontent.com/87098227/201492181-68731637-6cfc-47ae-80ea-8ae004756e3b.png)
 
 My stage of the project staged contained three main parts, including software integration, measurement equipment, and the control system. 
 

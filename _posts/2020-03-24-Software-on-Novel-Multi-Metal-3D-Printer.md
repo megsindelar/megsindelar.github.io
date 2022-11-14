@@ -24,6 +24,6 @@ I also worked with the mechanical design team to test and debug the powder mixin
 
 Additionally, to allow the mechanical design team to test multiple parts with my software, I created a simple HMI user interface with documentation. The interface allowed the user to specify different control parameters and to see how their parts functioned within the rest of the working system.
 
-Overall, my part of the project was a success, where I implemented ___ in time for the initial proof of concept prototype deadline.
+Overall, my part of the project was a success, where I implemented a software system for the initial proof of concept in time for the prototype deadline.
 
 This multi-metal 3D-printer is an invention of the co-founder and CEO of Dastan Technologies, Behzad “Buzz” Rankouhi, from UW-Madison. 

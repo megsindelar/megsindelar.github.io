@@ -1,7 +1,7 @@
 ---
 layout: post
 read_time: true
-show_date: true
+show_date: false
 title: "Software of a Novel Multi-Metal 3D Printer"
 # date: 2020-03-24 #2021-03-24
 img: 

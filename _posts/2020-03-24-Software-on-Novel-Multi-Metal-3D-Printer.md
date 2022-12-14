@@ -3,7 +3,7 @@ layout: post
 read_time: true
 show_date: true
 title: "Software of a Novel Multi-Metal 3D Printer"
-date: 2020-03-24 #2021-03-24
+# date: 2020-03-24 #2021-03-24
 img: 
 tags: [general blogging, thoughts, life]
 author: Meg Sindear

@@ -1,7 +1,7 @@
 ---
 layout: post
 read_time: true
-show_date: true
+show_date: false
 title: "Feedback Control on a Multi-Metal DED Printer"
 # date: 2021-01-06 #2021-01 - 2021-06
 img: 

@@ -4,7 +4,7 @@ read_time: true
 show_date: true
 title: "Attack of the Franka"
 <!-- date: 2021-01-06 #2021-01 - 2021-06 -->
-img: https://megsindelar.github.io/assets/img/posts/20210206/Attack_of_the_Franka.jpg
+img: [Attack_of_the_Franka](https://user-images.githubusercontent.com/87098227/207942922-18bef46c-d7de-464e-b126-3d27a3860904.png)
 #tags: [neural networks, machine learning, artificial intelligence]
 #category: 
 author: Meg Sindelar

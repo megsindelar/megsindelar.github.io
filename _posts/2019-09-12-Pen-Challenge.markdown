@@ -1,7 +1,7 @@
 ---
 layout: post
 read_time: true
-show_date: true
+show_date: false
 title: "Robotic Pen Locator"
 # date: 2019-09-12
 img: 

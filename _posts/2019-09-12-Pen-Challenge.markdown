@@ -12,7 +12,10 @@ description: "Implemented a realsense camera using OpenCV to communicate to a ro
 ---
 The goal of this project was to locate a purple pen in space using OpenCV and grab it with a robotic arm.
 
-[Pen-Locator](https://user-images.githubusercontent.com/87098227/207751323-f2737d6e-292a-421c-9dd6-27d78a489c69.mp4)
+
+<video width="720" height="480" controls="controls">
+  <source src="https://user-images.githubusercontent.com/87098227/207751323-f2737d6e-292a-421c-9dd6-27d78a489c69.mp4" type="video/mp4">
+</video>
 
 Software: OpenCV, Python
 

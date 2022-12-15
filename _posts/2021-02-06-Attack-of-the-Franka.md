@@ -4,7 +4,7 @@ read_time: true
 show_date: false
 title: "Attack of the Franka"
 # date: 2021-01-06 #2021-01 - 2021-06
-img: posts/Attack_of_the_Franka/Attack_of_the_Franka.gif
+image: posts/Attack_of_the_Franka/Attack_of_the_Franka.gif
 # tags: [neural networks, machine learning, artificial intelligence]
 # category: 
 author: Meg Sindelar

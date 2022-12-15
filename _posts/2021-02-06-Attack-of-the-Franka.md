@@ -25,10 +25,14 @@ I worked on this project in a team of 4, with my other team members including Ni
 
 Overall, the system detects the difference between the blue and red blocks through OpenCV color detection tecniques. The colors are determined from the RGB image with the use of HSV threshold to draw contours. Additionally, depth filters are utilizeds to find transforms relative to the base of the robot. These are then passed into our motion planning ROS2 node. Images of the color detection and the transformations is shown below.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/20210206/Camera_CV.png" />
+[Camera_CV](https://user-images.githubusercontent.com/87098227/207943180-a5a74619-e88a-40fc-bcca-0b5af6c167ae.png)
+
+<!-- <img src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/20210206/Camera_CV.png" /> -->
+
+[RVIZ_CV](https://user-images.githubusercontent.com/87098227/207943370-a53713c0-cc64-42e5-ac7c-8e8092560970.png)
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/20210206/RVIZ_CV.png" />
+<!-- <img src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/20210206/RVIZ_CV.png" /> -->
 
 
 <!-- <center><img src='./assets/img/posts/20210206/Camera_CV.png' width="540"></center><br> -->
@@ -42,5 +46,6 @@ Next, the robot begins to destroy its enemies by looking to the leftmost enemy f
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/20210206/Planning_Scene.png" />
 
+[Planning_Scene](https://user-images.githubusercontent.com/87098227/207943525-9257d559-e07f-4979-95cd-99de3c8ae1f4.png)
 
 <!-- <center><img src='./assets/img/posts/20210206/Planning_Scene.png' width="540"></center><br> -->

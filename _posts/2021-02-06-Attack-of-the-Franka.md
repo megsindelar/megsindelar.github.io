@@ -12,7 +12,7 @@ description:
 ---
 The goal of this project was to configure a robot to autonomously wield a lightsaber to knock down enemies, represented by red blocks, without knocking down its allies, represented by blue blocks.
 
-<details open="" class="details-reset border rounded-2">
+<!-- <details open="" class="details-reset border rounded-2">
   <summary class="px-3 py-2 border-bottom">
     <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16" class="octicon octicon-device-camera-video">
     <path fill-rule="evenodd" d="..."></path>
@@ -24,7 +24,25 @@ The goal of this project was to configure a robot to autonomously wield a lights
   <video src="https://user-images.githubusercontent.com/169707/126715420-991ad821-9ac8-4b66-b79e-e0966e0f3a89.mp4" data-canonical-src="https://user-images.githubusercontent.com/169707/126715420-991ad821-9ac8-4b66-b79e-e0966e0f3a89.mp4" data-canonical-src="https://user-images.githubusercontent.com/169707/126715420-991ad821-9ac8-4b66-b79e-e0966e0f3a89.mp4" data-canonical-src="https://user-images.githubusercontent.com/169707/126715420-991ad821-9ac8-4b66-b79e-e0966e0f3a89.mp4" controls="controls" muted="muted" class="d-block rounded-bottom-2 width-fit" style="max-height:640px;">
 
   </video>
-</details>
+</details> -->
+
+---
+layout: post
+title: "MP4 Video"
+modified:
+categories: 
+excerpt:
+tags: []
+image:
+  feature:
+date: 2014-11-18T11:34:04-05:00
+---
+
+This is testing out Liquid.
+
+<video width="480" height="320" controls="controls">
+  <source src="https://user-images.githubusercontent.com/169707/126715420-991ad821-9ac8-4b66-b79e-e0966e0f3a89.mp4" type="video/mp4">
+</video>
 
 
 <!-- [Multi-Attack](https://user-images.githubusercontent.com/113186159/206842696-c61fa77b-1fb3-462e-9ac9-2ade4ed72283.mp4) -->

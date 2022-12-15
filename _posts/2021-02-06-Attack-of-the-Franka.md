@@ -3,7 +3,7 @@ layout: post
 read_time: true
 show_date: true
 title: "Attack of the Franka"
-date: 2021-01-06 #2021-01 - 2021-06
+<!-- date: 2021-01-06 #2021-01 - 2021-06 -->
 img: https://megsindelar.github.io/assets/img/posts/Attack_of_the_Franka/Attack_of_the_Franka.jpg
 #tags: [neural networks, machine learning, artificial intelligence]
 #category: 

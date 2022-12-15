@@ -23,10 +23,12 @@ Hardware: 7 DOF Franka Emika Panda, RealSense D435i camera,
 I worked on this project in a team of 4, with my other team members including Nick Morales, Vaishnavi Dornadula, and Sushma Chandra. This project was split into computer vision and motion planning, where I focused on the motion planning side.
 
 
-Overall, the system detects the difference between the blue and red blocks through OpenCV color detection tecniques. The colors are determined from the RGB image with the use of HSV threshold to draw contours. Additionally, depth filters are utilizeds to find transforms relative to the base of the robot. These are then passed into our motion planning ROS2 node. An image of the computer vision is shown below.
+Overall, the system detects the difference between the blue and red blocks through OpenCV color detection tecniques. The colors are determined from the RGB image with the use of HSV threshold to draw contours. Additionally, depth filters are utilizeds to find transforms relative to the base of the robot. These are then passed into our motion planning ROS2 node. Images of the color detection and the transformations is shown below.
 
 
-"Image"
+"posts/Attack_of_the_Franka/Camera_CV.png"
+
+"posts/Attack_of_the_Franka/RVIZ_CV.png"
 
 
 As for the motion, first the robot starts by picking up the lightsaber from a 3D-printed stand. In order to accomplish this, the lightsaber is first added as a collision object in the MoveIt planning scene, then the robot moves towards the lightsaber through specific end-effector poses. Then, the lightsaber gets removed from the scene as a collision object, the robot graps the lightsaber, and the lightsaber is added as an attached collision object.

@@ -4,7 +4,7 @@ read_time: true
 show_date: false
 title: "Robotic Pen Locator"
 # date: 2019-09-12
-img: 
+img: "posts/Pen_Challenge/robot_pen.png"
 tags: [copyright, creativity, neural networks, machine learning, artificial intelligence]
 category: opinion
 author: Meg Sindelar

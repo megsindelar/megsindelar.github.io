@@ -21,7 +21,7 @@ Software: Python, CoppeliaSim
 There were three steps to this project. First, I generated a desired end-effector trajectory to pick and place a block. Next, I then determined the robot chassis configuation, based on its odometry, and the arm configuration, from first-order Euler Integration, at each time step. Finally, I then implemented a feedforward plus PI feedback controller to correct the robots path if it deviates from the desired generated trajectory. The model of my feedforward plus PI feedback controller is shown below.
 
 "math here"
-<img src="https://render.githubusercontent.com/render/math?math=V(t) = [Ad_{X^{-1}X_{d}}]*V_{d}(t)]">
+<img src="https://render.githubusercontent.com/render/math?math=V(t) = [Ad_{X^{-1}*X_{d}}]*V_{d}(t)]">
 
 The feedback contoller outputs a twist which is then used, in combination with the pseudoinverse of the end-effector Jacobian, to find the wheel and arm joint speeds.
 

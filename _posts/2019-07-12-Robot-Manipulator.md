@@ -4,7 +4,7 @@ read_time: true
 show_date: true
 title: "Robot Manipulation"
 # date: 2021-01-06 #2021-01 - 2021-06
-img: 
+img: posts/Robot_Manipulation/Robot_Manipulator.gif
 #tags: [neural networks, machine learning, artificial intelligence]
 #category: 
 author: Meg Sindelar

@@ -831,7 +831,7 @@ svg.menu-icon-house {
 }
 .post-card-image {
   display: block;
-  width: 50%;
+  width: 100%;
   min-height: 150px;
   background-size: cover;
   background-position: center;

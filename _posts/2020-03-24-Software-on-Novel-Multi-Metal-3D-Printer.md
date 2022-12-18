@@ -4,7 +4,7 @@ read_time: true
 show_date: false 
 title: "Software of a Novel Multi-Metal 3D Printer"
 # date: 2020-03-24 #2021-03-24
-img: 
+img: posts/Software_Invention/3D_Metal_Printer.png
 tags: [general blogging, thoughts, life]
 author: Meg Sindear
 description:

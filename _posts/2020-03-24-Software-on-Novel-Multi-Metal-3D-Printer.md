@@ -9,9 +9,10 @@ tags: [general blogging, thoughts, life]
 author: Meg Sindear
 description:
 ---
-The goal of this project was to create the software for an initial prototype of a novel multi-metal 3D printer to create completely 3D-printed electric motors. Unfortunately, this invention is still under development, so I cannot expand into too many details or show images of the prototype itself.
+The goal of this project was to create the software for an initial prototype of a novel multi-metal 3D printer to create completely 3D-printed electric motors.
 
-"Image"
+Unfortunately, this invention is still under development, so I cannot expand into too many details or show images of the prototype itself.
+
 
 Software: B&amp;R Automation Studio Ladder Logic, C
 

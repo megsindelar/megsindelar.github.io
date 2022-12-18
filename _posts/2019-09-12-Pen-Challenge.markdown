@@ -5,7 +5,7 @@ show_date: false
 title: "Robotic Pen Locator"
 # date: 2019-09-12
 img: "posts/Pen_Challenge/robot_pen4.jpg"
-tags: [copyright, creativity, neural networks, machine learning, artificial intelligence]
+# tags: [copyright, creativity, neural networks, machine learning, artificial intelligence]
 category: opinion
 author: Meg Sindelar
 description: "Implemented a realsense camera using OpenCV to communicate to a robotic arm where a purple pen is in space, and have the robotic arm move to and grab the pen."

@@ -816,14 +816,14 @@ svg.menu-icon-house {
 }
 /* = = = = = = = = = = Post-Card (homepage) = = = = = = = = = = */
 .post-card-box {
-  margin: 50px 0 15px;
+  margin: 50px 0 40px;
   padding: 0;
 }
 .post-card-box li {
   position: relative;
   list-style: none;
   float: left;
-  width: 50%;
+  width: 100%;
 }
 
 .post-card {

@@ -4,8 +4,8 @@ read_time: true
 show_date: true
 title: "Feedback Control on a Multi-Metal DED Printer"
 # date: 2021-01-06 #2021-01 - 2021-06
-img: 
-#tags: [neural networks, machine learning, artificial intelligence]
+img: posts/Feedback_Height/Feedback_Height_Cover.jpg
+# tags: [C, Lua, C#, Controls, 3D-printing]
 #category: 
 author: Meg Sindelar
 description: 
@@ -34,7 +34,9 @@ The external program contains three main subsections. The first is another Lua s
 
 **Measurement Equipment:**
 
-I used a Keyence IL-065 displacement laser to measure the height of each layer in a print. To do this, I first manufactured a mount to attach the sensor to the print head. This is so that every time the print head moved up to create a new layer, the distance sensor moved the same amount. Thus, the goal of my control system was to make sure the distance remained constant each time the print head moved to the next layer. This constraint would then lead to constant layer heights, resulting in a more precise build height. I used a C# program to process the data, as specified by the documentation.
+I used a Keyence IL-065 displacement laser to measure the height of each layer in a print. To do this, I first manufactured a mount to attach the sensor to the print head. This is so that every time the print head moved up to create a new layer, the distance sensor moved the same amount. Thus, the goal of my control system was to make sure the distance remained constant each time the print head moved to the next layer. This constraint would then lead to constant layer heights, resulting in a more precise build height. I used a C# program to process the data, as specified by the documentation. An image of the laser measuring a print build is shown below by the red dot on the part.
+
+![Feedback_Height_Laser](https://user-images.githubusercontent.com/87098227/208274457-98eb5cc6-75e9-44a7-8f69-183eff8702aa.jpg)
 
 I also used a NI USB-6000 A/D converter to convert the analog data from the laser distance sensor to digital for the C# program.
 

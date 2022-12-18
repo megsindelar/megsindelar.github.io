@@ -816,7 +816,7 @@ svg.menu-icon-house {
 }
 /* = = = = = = = = = = Post-Card (homepage) = = = = = = = = = = */
 .post-card-box {
-  margin: 50px 0 15px;
+  margin: 25px 0 15px;
   padding: 0;
 }
 .post-card-box li {
@@ -871,7 +871,7 @@ svg.menu-icon-house {
 
 .tag {
   text-decoration: none;
-  text-transform: uppercase;
+/*   text-transform: uppercase; */
   color: white;
   white-space: nowrap
 }
@@ -1312,7 +1312,7 @@ div.tag-cloud{
     font-family: var(--font2);
     font-weight: var(--font2-regular);
     display: block;
-    text-transform: lowercase}
+    text-transform: uppercase}
 .tags li a:hover {
     background: var(--accent);
     color: white !important;

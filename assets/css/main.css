@@ -823,7 +823,7 @@ svg.menu-icon-house {
   position: relative;
   list-style: none;
   float: left;
-  width: 25%;
+  width: 50%;
 }
 
 .post-card {
@@ -831,7 +831,7 @@ svg.menu-icon-house {
 }
 .post-card-image {
   display: block;
-  width: 100%;
+  width: 50%;
   min-height: 150px;
   background-size: cover;
   background-position: center;

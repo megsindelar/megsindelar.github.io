@@ -1313,7 +1313,7 @@ div.tag-cloud{
     font-family: var(--font2);
     font-weight: var(--font2-regular);
     display: block;
-    text-transform: lowercase}
+    text-transform: uppercase}
 .tags li a:hover {
     background: var(--accent);
     color: white !important;

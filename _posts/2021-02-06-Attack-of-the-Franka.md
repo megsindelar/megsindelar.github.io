@@ -5,7 +5,7 @@ show_date: false
 title: "Attack of the Franka"
 # date: 2021-01-06 #2021-01 - 2021-06
 img: posts/Attack_of_the_Franka/Attack_of_the_Franka.gif
-tags: [ROS2, Robotics]
+tags: [ROS2, Python, OpenCV, Robotics]
 # category: 
 author: Meg Sindelar
 description: 

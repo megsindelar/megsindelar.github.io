@@ -4,9 +4,7 @@ description: 'A collection of projects.' # this means to ignore newlines until "
 permalink: ':title:output_ext'
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://megsindelar.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-
 logo: "![portfolio_name](https://user-images.githubusercontent.com/87098227/208310052-87dd4f4a-d834-44df-ac35-4daba8cfb918.svg)
-
 #logo-icon: "/assets/img/branding/MVM-symbol.svg"
 #logo-icon-SEO: "/assets/img/branding/MVM-symbol-black.png" # must be a non SVG file
 

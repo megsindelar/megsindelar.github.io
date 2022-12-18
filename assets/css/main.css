@@ -872,7 +872,7 @@ svg.menu-icon-house {
 
 .tag {
   text-decoration: none;
-  text-transform: uppercase;
+/*   text-transform: uppercase; */
   color: white;
   white-space: nowrap
 }

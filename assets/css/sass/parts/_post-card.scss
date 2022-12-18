@@ -1,5 +1,5 @@
 .post-card-box {
-  margin: 50px 0 50px;
+  margin: 100px 0 100px;
   padding: 0;
 
   li {
@@ -7,6 +7,7 @@
     list-style: none;
     float: left;
     width: 50%;
+    height: 100%;
     transition: all .3s;
     &:hover {
       opacity: 0.9;

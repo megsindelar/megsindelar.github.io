@@ -4,7 +4,7 @@ read_time: true
 show_date: false
 title: "Robotic Pen Locator"
 # date: 2019-09-12
-img: "posts/Pen_Challenge/pen.webm"
+img: "posts/Pen_Challenge/pen_cover2.gif"
 # tags: [OpenCV, Python]
 category: opinion
 author: Meg Sindelar

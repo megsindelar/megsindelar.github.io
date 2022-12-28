@@ -24,7 +24,7 @@ testing
 
 testing 2
 
-[No-Joint-Limits](https://user-images.githubusercontent.com/87098227/209869663-2a98ae8d-381d-4228-9ed1-7205fd975bcd.mp4)
+<center><img src="./assets/img/posts/Robot_Manipulation/Joint_Limits.mp4"></center>
 
 
 

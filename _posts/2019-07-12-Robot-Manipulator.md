@@ -13,7 +13,7 @@ description:
 The goal of this project was to implement a feedforward plus PI feedback controller, based on calculated odometry, for a simulated mobile Kuka youBot robot to follow a generated pick and place trajectory.
 
 <video width="720" height="480" controls="controls">
-  <source src="https://user-images.githubusercontent.com/87098227/209865103-3042d295-6362-425b-bd3c-7a0033de059f.mp4" type="video/mp4">
+  <source src="https://user-images.githubusercontent.com/113186159/206842696-c61fa77b-1fb3-462e-9ac9-2ade4ed72283.mp4" type="video/mp4">
 </video>
 
 Software: Python, CoppeliaSim

@@ -22,10 +22,6 @@ testing
 <video src="https://user-images.githubusercontent.com/87098227/209881521-c40da1b2-4b4a-4319-b9e5-ff31276734ad.mp4" controls="controls" style="max-width: 730px;">
 </video>
 
-testing 2
-
-<center><img src="./assets/img/posts/Robot_Manipulation/Joint_Limits.mp4"></center>
-
 
 
 Software: Python, CoppeliaSim
@@ -55,3 +51,12 @@ To make the robot more realistic, I also implemented joint limits on 4 of the 5 
 <video width="720" height="480" controls="controls">
   <source src="https://user-images.githubusercontent.com/87098227/209865251-5d99b2e4-722f-403a-abfd-0e8938963f2d.mp4" type="video/mp4">
 </video>
+
+
+
+testing 2
+
+{% include youtube.html id="VP_wHaPdKIw" %}
+
+
+

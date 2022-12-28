@@ -13,18 +13,18 @@ description:
 The goal of this project was to implement a feedforward plus PI feedback controller, based on calculated odometry, for a simulated mobile Kuka youBot robot to follow a generated pick and place trajectory.
 
 <video width="720" height="480" controls="controls">
-  <source src="https://user-images.githubusercontent.com/87098227/209869663-2a98ae8d-381d-4228-9ed1-7205fd975bcd.mp4" type="video/mp4">
+  <source src="https://user-images.githubusercontent.com/87098227/209881521-c40da1b2-4b4a-4319-b9e5-ff31276734ad.mp4" type="video/mp4">
 </video>
 
 
 testing
 
-<video src="https://user-images.githubusercontent.com/87098227/209874316-bcbbdbcb-b988-4456-a263-9546796f26da.mp4" controls="controls" style="max-width: 730px;">
+<video src="https://user-images.githubusercontent.com/87098227/209881521-c40da1b2-4b4a-4319-b9e5-ff31276734ad.mp4" controls="controls" style="max-width: 730px;">
 </video>
 
 testing 2
 
-[No-Joint-Limits](https://user-images.githubusercontent.com/87098227/209869663-2a98ae8d-381d-4228-9ed1-7205fd975bcd.mp4)
+<center><img src="./assets/img/posts/Robot_Manipulation/Joint_Limits.mp4"></center>
 
 
 

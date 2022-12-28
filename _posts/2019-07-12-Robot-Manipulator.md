@@ -13,8 +13,20 @@ description:
 The goal of this project was to implement a feedforward plus PI feedback controller, based on calculated odometry, for a simulated mobile Kuka youBot robot to follow a generated pick and place trajectory.
 
 <video width="720" height="480" controls="controls">
-  <source src="https://user-images.githubusercontent.com/87098227/208171395-62416599-b110-4b34-bc4b-e6358c6da02e.mp4" type="video/mp4">
+  <source src="https://user-images.githubusercontent.com/87098227/209869663-2a98ae8d-381d-4228-9ed1-7205fd975bcd.mp4" type="video/mp4">
 </video>
+
+
+testing
+
+<video src="https://user-images.githubusercontent.com/87098227/209874316-bcbbdbcb-b988-4456-a263-9546796f26da.mp4" controls="controls" style="max-width: 730px;">
+</video>
+
+testing 2
+
+[No-Joint-Limits](https://user-images.githubusercontent.com/87098227/209869663-2a98ae8d-381d-4228-9ed1-7205fd975bcd.mp4)
+
+
 
 Software: Python, CoppeliaSim
 
@@ -41,5 +53,5 @@ Overshoot due to a poorly-tuned feedforward plus PI feedback controller
 To make the robot more realistic, I also implemented joint limits on 4 of the 5 arm joints. I chose only the first 4 out of the total 5 joints to constrain because in the desired trajectory I command a specific position for joint 5. Therefore, a constraint on joint 5 seemed to be an unnecessary addition that would overconstrain the problem. Adding the joint constraints forces the robot to plan trajectories to pick and place the block without any self-collisions or singularities. This process works by first planning the robot configuration at the next time step without executing. Then, the four specified joints are check to see if they remain between the upper and lower bounds of the limits. If not, the column of the Jacobian matrix corresponding to that joint is set to all zeros. This suggests to the controls that moving that specific joint won't cause any end-effector motion, thus the new controls won't command any motion for that specific joint. The video above demonstrates a well-tuned feedforward plus PI feedback controller without joint limits. For comparison, a video of a well-tuned feedforward plus PI feedback controller with joint limits is shown below.
 
 <video width="720" height="480" controls="controls">
-  <source src="https://user-images.githubusercontent.com/87098227/208171985-c8726629-3948-40f6-9bcb-ca6fa2fc8129.mp4" type="video/mp4">
+  <source src="https://user-images.githubusercontent.com/87098227/209865251-5d99b2e4-722f-403a-abfd-0e8938963f2d.mp4" type="video/mp4">
 </video>

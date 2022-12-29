@@ -18,10 +18,6 @@ The goal of this project was to configure a robot to autonomously wield a lights
 
 Software: Python, ROS2, MoveIt, OpenCV, RVIZ
 
-<video width="720" height="480" controls="controls">
-  <source src="https://user-images.githubusercontent.com/87098227/209865103-3042d295-6362-425b-bd3c-7a0033de059f.mp4" type="video/mp4">
-</video>
-
 Hardware: 7 DOF Franka Emika Panda, RealSense D435i camera, 
 
 I worked on this project in a team of 4, with my other team members including Nick Morales, Vaishnavi Dornadula, and Sushma Chandra. This project was split into computer vision and motion planning, where I focused on the motion planning side.

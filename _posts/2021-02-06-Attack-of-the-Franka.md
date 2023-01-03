@@ -12,9 +12,7 @@ description:
 ---
 The goal of this project was to configure a robot to autonomously wield a lightsaber to knock down enemies, represented by red blocks, without knocking down its allies, represented by blue blocks.
 
-<video width="720" height="480" controls="controls">
-  <source src="https://user-images.githubusercontent.com/113186159/206842696-c61fa77b-1fb3-462e-9ac9-2ade4ed72283.mp4" type="video/mp4">
-</video>
+{% include youtube.html id="CiLwu0IqOCw" %}
 
 Software: Python, ROS2, MoveIt, OpenCV, RVIZ
 

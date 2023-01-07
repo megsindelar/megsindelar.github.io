@@ -18,7 +18,7 @@ Software: Python, ROS2, MoveIt, OpenCV, RVIZ
 
 Hardware: 7 DOF Franka Emika Panda, RealSense D435i camera
 
-Github link: <a href="[https://www.something.com](https://github.com/ngmor/attack-of-the-franka)"> Something </a>
+Github link: <a href="(https://github.com/ngmor/attack-of-the-franka)"> https://github.com/ngmor/attack-of-the-franka </a>
 
 I worked on this project in a team of 4, with my other team members including Nick Morales, Vaishnavi Dornadula, and Sushma Chandra. This project was split into computer vision and motion planning, where I focused on the motion planning side.
 

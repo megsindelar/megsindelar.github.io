@@ -17,7 +17,7 @@ The goal of this project was to implement a feedforward plus PI feedback control
 
 Software: Python, CoppeliaSim
 
-Github Link: Github link: <a href="(https://github.com/megsindelar/Robot-Manipulation)"> https://github.com/megsindelar/Robot-Manipulation </a>
+Github link: <a href="(https://github.com/megsindelar/Robot-Manipulation)"> https://github.com/megsindelar/Robot-Manipulation </a>
 
 There were three steps to this project. First, I generated a desired end-effector trajectory to pick and place a block. Next, I then determined the robot chassis configuation, based on its odometry, and the arm configuration, from first-order Euler Integration, at each time step. Finally, I then implemented a feedforward plus PI feedback controller to correct the robots path if it deviates from the desired generated trajectory. The model of my feedforward plus PI feedback controller is shown below.
 

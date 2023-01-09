@@ -4,7 +4,7 @@ read_time: true
 show_date: false 
 title: "Software of a Novel Multi-Metal 3D Printer"
 # date: 2020-03-24 #2021-03-24
-img: posts/Software_Invention/3D_Metal_Printer.png
+img: posts/Software_Invention/electric_motor.svg
 tags: [Software Architecture, Ladder Logic, C, 3D-printing]
 author: Meg Sindear
 description:
@@ -21,7 +21,9 @@ Hardware: B&amp;R CPU, stepper motors, limit switches, digital I/O modules, auge
 The project was split up into a few diffrent teams, where I was the sole individual on the software development team. I designed a control system architecture using ladder logic and C programming on a B&amp;R PLC platform. The architecture of the code consisted of multiple conditional-based state machines used to control the stepper motors of the build plate, the powder augers, and limit switch conditions.
 
 
-I also worked with the mechanical design team to test and debug the powder mixing and distribution chamber, which utilized multiple augers and piezo electrics to control the powder flow.
+I also worked with the mechanical design team to test and debug the powder mixing and distribution chamber, which utilized multiple augers and piezo electrics to control the powder flow. Below is a diagram of the subsections of components I configured and systems I created.
+
+![Screenshot from 2023-01-09 10-47-57](https://user-images.githubusercontent.com/87098227/211362197-64e34986-7830-4ebb-aacb-754b48de0a33.png)
 
 Additionally, to allow the mechanical design team to test multiple parts with my software, I created a simple HMI user interface with documentation. The interface allowed the user to specify different control parameters and to see how their parts functioned within the rest of the working system.
 

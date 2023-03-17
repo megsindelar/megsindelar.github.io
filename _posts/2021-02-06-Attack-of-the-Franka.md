@@ -23,7 +23,7 @@ Github link: <a href="(https://github.com/ngmor/attack-of-the-franka)"> https://
 I worked on this project in a team of 4, with my other team members including Nick Morales, Vaishnavi Dornadula, and Sushma Chandra. This project was split into computer vision and motion planning, where I focused on the motion planning side.
 
 
-Overall, the system detects the difference between the blue and red blocks through OpenCV color detection tecniques. The colors are determined from the RGB image with the use of HSV threshold to draw contours. Additionally, depth filters are utilizeds to find transforms relative to the base of the robot. These are then passed into our motion planning ROS2 node. Images of the color detection and the transformations is shown below.
+Overall, the system detects the difference between the blue and red blocks through OpenCV color detection tecniques. The colors are determined from the RGB image with the use of HSV threshold to draw contours. Additionally, depth filters are utilized to find transforms relative to the base of the robot. These are then passed into our motion planning ROS2 node. Images of the color detection and the transformations is shown below.
 
 ![Camera_CV](https://user-images.githubusercontent.com/87098227/207943180-a5a74619-e88a-40fc-bcca-0b5af6c167ae.png)
 

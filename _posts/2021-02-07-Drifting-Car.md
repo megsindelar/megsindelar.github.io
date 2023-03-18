@@ -12,7 +12,8 @@ description:
 ---
 The goal of this project was to create a drifing car that could autonomously powerslide into a parallel parking spot.
 
-https://user-images.githubusercontent.com/87098227/226077785-7c41633c-0b24-44a4-a2bb-61c67c5146b3.mp4
+<video src="https://user-images.githubusercontent.com/87098227/226077785-7c41633c-0b24-44a4-a2bb-61c67c5146b3.mp4" controls="controls" style="max-width: 730px;">
+</video>
 
 Software: C++
 

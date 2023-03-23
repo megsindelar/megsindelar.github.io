@@ -22,7 +22,6 @@ Hardware: Brushless DC motor, VESC, Jeston Nano, Servo, PIC32, Arduino
 
 Github link: <a href="(https://github.com/megsindelar/autonomous-drift-parking-car)"> https://github.com/megsindelar/autonomous-drift-parking-car </a>
 
-
 For my system I created a feedforward PI controller in a multi-threaded C++ program to read feedback from steer and throttle encoders. The controller follows multiple different reference trajectories to slide into the parking spot.
 
 The vehicle is a 4WD RC car, which normally is more difficult to make drift than a RWD car. Therefore, to make the car drift, I put pvc pipe on the two front wheels. This helps the car slide into the spot when it turns.

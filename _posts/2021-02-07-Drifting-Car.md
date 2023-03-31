@@ -12,9 +12,7 @@ description:
 ---
 The goal of this project was to create a drifing car that could autonomously powerslide into a parallel parking spot.
 
-<video src="https://user-images.githubusercontent.com/87098227/226077785-7c41633c-0b24-44a4-a2bb-61c67c5146b3.mp4" controls="controls" style="max-width: 730px;">
-</video>
-
+{% include youtube.html id="_rUVOUsGAXA" %}
 
 Software: C++
 
@@ -36,13 +34,4 @@ For this system, the Jetson Nano is my main module that communicates with other 
 
 Below is my block diagram for my controller:
 ![image](https://user-images.githubusercontent.com/87098227/226091732-d516770c-4927-4258-8358-4c87d700cb40.png)
-
-
-Below are two more trajectories of the car sliding into a parking spot:
-
-<video src="https://user-images.githubusercontent.com/87098227/226085126-b6397616-634d-4579-a8b6-12d43efa1120.mp4" controls="controls" style="max-width: 730px;">
-</video>
-
-<video src="https://user-images.githubusercontent.com/87098227/226085112-c1b7507b-579b-428f-8452-0de2543a2d5a.mp4" controls="controls" style="max-width: 730px;">
-</video>
 

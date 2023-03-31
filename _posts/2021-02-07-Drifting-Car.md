@@ -18,7 +18,7 @@ Software: C++
 
 Hardware: Brushless DC motor, VESC, Jeston Nano, Servo, PIC32, Arduino
 
-Github link: <a href="(https://github.com/megsindelar/autonomous-drift-parking-car)"> https://github.com/megsindelar/autonomous-drift-parking-car </a>
+Github link: [Github](https://github.com/megsindelar/autonomous-drift-parking-car)
 
 For my system I created a feedforward PI controller in a multi-threaded C++ program to read feedback from steer and throttle encoders. The controller follows multiple different reference trajectories to slide into the parking spot.
 

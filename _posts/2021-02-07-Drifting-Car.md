@@ -33,5 +33,5 @@ Additionally, to upgrade the RC car, I created an entirely new circuit diagram, 
 For this system, the Jetson Nano is my main module that communicates with other modules to control the car. For the throttle, I opened the PWM ports on the Jetson Nano using direct memory access to send the signal to the VESC to control the brushless DC motor. Then, for the steer, I connected an Arduino to the Jetson Nano and used serial communication to send commands to the Arduino to control the servo for steering. Next, there are two Raspberry Picos that are used as quadrature converters to read both the throttle and steer encoders. I also use serial communication to read the encoder data. 
 
 Below is my block diagram for my controller:
-![image](https://user-images.githubusercontent.com/87098227/226091732-d516770c-4927-4258-8358-4c87d700cb40.png)
+![Screenshot from 2023-04-02 13-05-33](https://user-images.githubusercontent.com/87098227/229370685-4fe9fc79-ab39-49c6-ae7e-8e8676e74d78.png)
 

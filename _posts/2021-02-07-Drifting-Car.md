@@ -46,9 +46,7 @@ I have two ideas for different ML algorithms to implement on this vehicle as a b
 
 
 References:
-
-[1]  
-@article{Cai2020HighSpeedAD,
+[1]  @article{Cai2020HighSpeedAD,
   title={High-Speed Autonomous Drifting With Deep Reinforcement Learning},
   author={Peide Cai and X. Mei and L. Tai and Yuxiang Sun and M. Liu},
   journal={IEEE Robotics and Automation Letters},

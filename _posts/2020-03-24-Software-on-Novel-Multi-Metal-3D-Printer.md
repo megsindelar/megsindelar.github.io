@@ -2,10 +2,10 @@
 layout: post
 read_time: true
 show_date: false 
-title: "Software of a Novel Multi-Metal 3D Printer"
+title: "Sindelar - Software of a Novel Multi-Metal 3D Printer"
 # date: 2020-03-24 #2021-03-24
 img: posts/Software_Invention/metal_3d_printing.png
-tags: [Software Architecture, Ladder Logic, C, 3D-printing]
+# tags: [Software Architecture, Ladder Logic, C, 3D-printing]
 author: Meg Sindear
 description:
 ---

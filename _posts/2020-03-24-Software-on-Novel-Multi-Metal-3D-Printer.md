@@ -1,6 +1,6 @@
 ---
 layout: post
-read_time: true
+read_time: false
 show_date: false 
 title: "Sindelar - Software of a Novel Multi-Metal 3D Printer"
 # date: 2020-03-24 #2021-03-24

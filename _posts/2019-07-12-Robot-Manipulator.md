@@ -1,6 +1,6 @@
 ---
 layout: post
-read_time: true
+read_time: false
 show_date: true
 title: "Sindelar - Robot Manipulation"
 # date: 2021-01-06 #2021-01 - 2021-06

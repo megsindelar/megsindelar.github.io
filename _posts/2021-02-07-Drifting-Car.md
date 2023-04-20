@@ -2,10 +2,10 @@
 layout: post
 read_time: true
 show_date: false
-title: "Autonomous Parallel Parking Drift Car"
+title: "Sindelar - Autonomous Parallel Parking Drift Car"
 # date: 2021-01-06 #2021-01 - 2021-06
 img: posts/Header/drift_parking_car.gif
-tags: [C++]
+# tags: [C++]
 # category: 
 author: Meg Sindelar
 description: 

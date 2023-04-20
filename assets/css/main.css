@@ -1,8 +1,8 @@
 
 @charset "utf-8";
 /* Main Color palette and fonts */
-
-/* html[data-theme="dark"] {
+/* 
+html[data-theme="dark"] {
   --accent:       #DB504A;    /* accent     */
   --accent-dark:  #4e3e51;    /* accent 2   */
   --main:         #326273;    /* main color */
@@ -24,9 +24,9 @@
   --font2-light:      200;
   --font2-regular:    400;
   --font2-bold:       700;
-} */
+}
 
-html {
+/* html {
   --accent:       #d14c47;    /* accent     */
   --accent-dark:  #DBBEA1;    /* accent 2   */
   --main:         #5F8081;    /* main color */
@@ -48,7 +48,7 @@ html {
   --font2-light:      200;
   --font2-regular:    400;
   --font2-bold:       700;
-}
+} */
 
 html[data-theme="dark"]  {
   --accent:       #d14c47;    /* accent     */

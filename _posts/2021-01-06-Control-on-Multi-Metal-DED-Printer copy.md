@@ -12,8 +12,6 @@ description:
 ---
 The goal of this project was to design and implement a signature-based feedback control system on a LENS Multi-Metal DED Printer.
 
-"Image"
-
 Software: Lua Script, C#, C
 
 Hardware: LENS MR 7 printer, Keyence IL-065 laser, NI USB-6000 A/D converter

@@ -1,7 +1,7 @@
 ---
 layout: post
 read_time: false
-show_date: true
+show_date: false
 title: "Sindelar - Robot Manipulation"
 # date: 2021-01-06 #2021-01 - 2021-06
 img: posts/Robot_Manipulation/Robot_Manipulator.gif

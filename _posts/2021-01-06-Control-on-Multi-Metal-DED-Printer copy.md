@@ -2,7 +2,7 @@
 layout: post
 read_time: true
 show_date: true
-title: "Feedback Control on a Multi-Metal DED Printer"
+title: "Sindelar - Feedback Control on a Multi-Metal DED Printer"
 # date: 2021-01-06 #2021-01 - 2021-06
 img: posts/Feedback_Height/Feedback_Height_Cover.jpg
 # tags: [C, Lua, C#, Controls, 3D-printing]

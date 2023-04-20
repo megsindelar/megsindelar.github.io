@@ -733,7 +733,7 @@ svg.menu-icon-house {
 }
 
 /* = = = = = = = = = = Search Page = = = = = = = = = = */
-.search-box {
+/* .search-box {
   padding-top: 40px;
   position: fixed;
   top: 0;
@@ -813,7 +813,7 @@ svg.menu-icon-house {
   position: absolute;
   top: 0;
   right: 0;
-}
+} */
 /* = = = = = = = = = = Post-Card (homepage) = = = = = = = = = = */
 .post-card-box {
   margin: 25px 0 15px;

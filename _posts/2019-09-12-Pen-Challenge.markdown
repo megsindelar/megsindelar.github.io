@@ -1,6 +1,6 @@
 ---
 layout: post
-read_time: true
+read_time: false
 show_date: false
 title: "Sindelar - Robotic Pen Locator"
 # date: 2019-09-12

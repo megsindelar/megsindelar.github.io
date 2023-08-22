@@ -13,6 +13,8 @@ description:
 The goal of this project was to create an active pose-graph SLAM architecture using visual measurements on a physical system to maneuver around a poster board and be able 
 to localize and recreate a map of the environment. There is a large focus on the visual search of this project.
 
+** video here **
+
 Software: C++, OpenCV, SESync, Sophus, Eigen, TEASER
 
 Hardware: Turtlebot3, Raspberry Pi, Raspberry Pi Cam V2, OpenCR board, RGB LEDS
@@ -21,7 +23,7 @@ Github link: [Github](https://github.com/megsindelar/active_slam)
 
 Below is a block diagram for the entire active SLAM system:
 
-** block diagram here**
+![block_diag_active_slam](https://github.com/megsindelar/megsindelar.github.io/assets/87098227/20f29036-a69e-4564-8f3f-12e351322b8d)
 
 In this system, the camera is mounted on the turtlebot so that it is only ___ meters from the ground, therefore limiting its field of view to a very small area. The point of this is to rely more on the image registration and decision making processes to try to prove robustness of those systems.
 

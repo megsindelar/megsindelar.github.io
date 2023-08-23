@@ -25,13 +25,25 @@ Below is a block diagram for the entire active SLAM system:
 
 ![block_diag_active_slam](https://github.com/megsindelar/megsindelar.github.io/assets/87098227/20f29036-a69e-4564-8f3f-12e351322b8d)
 
-In this system, the camera is mounted on the turtlebot so that it is only ___ meters from the ground, therefore limiting its field of view to a very small area. The point of this is to rely more on the image registration and decision making processes to try to prove robustness of those systems.
+In this system, the camera is mounted on the turtlebot so that it is only 0.7 meters from the ground, therefore limiting its field of view to a very small area. The point of this is to rely more on the image registration and decision making processes to try to prove robustness of those systems. Below are a few images of the turtlebot used.
+
+**turtlebot images**
 
 For my SLAM system I use estimated turtlebot poses based on wheel encoder odometry and visual measurements for loop closure to update the graph. I utilize the SE-Sync system to update each node position based on individual information matrices, where I configure them to rely more on the visual loop closure measurements than the wheel odometry.
 
-One challenge with creating this project on a real-world physical system is due to hardware limitations. The wheel odometry is never perfectly accuate due to wheel slippage and/or the wheels getting stuck on small bumps on the floor. Additionally, due to the limited resolution of the Raspberry Pi camera, the image registration metrics and additional tests of odom distance and OpenCV matches distances would vary from test to test, therefore making it unreasonable to try to threshold these tests to allow enough real loop closures while blocking out all false loop closures. Thus, it was decided to instead pivot to computing the mean-squared error between images nearby the designated looping node and use the best image and location from that test as a loop.  
+Originally, I had three tests to try to verify if the loop closure was a real loop or a false positive. In graph-based SLAM, it is crucial to not let any false positive loops through, because while loop closures help to update and optimize the graph, a false positive completely messes the graph up and hurts the graph a lot more than a true positive helps. My tests for this problem included utilizing bag of words within a circular region around the turtlebot, along with then comparing top candidates to odom distances and OpenCV matcher distances. The combination of these three seemed reasonable, however it was due to hardware limitations that this combination of tests was unreliable. 
 
-The decision making process currently consists of ... The Phd student I was working with will next use my system to implement his ergodic metric algorithm for the decision making part of this system.
+First off, the wheel odometry is never perfectly accuate due to wheel slippage and/or the wheels getting stuck on small bumps, such as dirt and pebbles tracked in, on the floor. The wheel odometry would also suffer if the turtlebot went off the poster enough, where the front ball bearing would get stuck trying to get back onto the poster. Anything that made the turtlebot stuck, even for a little would greatly accumulate over time. This made it difficult to threshold the odom distance metric, to determine how likely it is to be a true positive loop depending on how far away the turtlebot was. If the graph was built with too many nodes and not enough loop closures, then the wheel odometry would be too far away to detect a true positive loop. 
+
+The visual measurements are supposed to come into play to offset the wheel odom issues. However, due to hardware limitations there too, image registration techniques only worked so well. The Raspberry Pi camera has limited resolution for each frame, which led to the image registration bag of words metrics and OpenCV matches distances varying greatly in identical tests. Therefore it became unreasonable to try to threshold these in combination with the wheel odometry. I tried making all the tests as strict as possible, however not enough loops were detected and the wheel odometry went uncorrected for too long. But, if I made some of the tests a little more lenient, it would lead to too many inaccurate false positives.
+
+A plot is shown below to demonstrate just the enormous range of viable thresholding values for each of the three tests, as a percent difference from highest to lowest value per test.
+
+![Screenshot from 2023-08-23 08-06-17](https://github.com/megsindelar/megsindelar.github.io/assets/87098227/c282fb70-3c91-46f8-9665-89c8f0ec058a)
+
+Therefore, it was decided to instead pivot to computing the mean-squared error between images nearby the designated looping node and use the best image and location from that test as a loop. This method proved to be good for a small loop, however when continuing to find more, the uncertainty in wheel odometry would again increase greatly because the focus of the project switched from less active SLAM to more visual search to demonstrate a comparison and proof of concept loops.
+
+The decision making process currently consists of waypoint planning with loops triggered every specific number of nodes. The Phd student I was working with will next use my system to implement his ergodic metric algorithm for the decision making part of this system.
 
 
 

@@ -27,7 +27,9 @@ Below is a block diagram for the entire active SLAM system:
 
 In this system, the camera is mounted on the turtlebot so that it is only 0.7 meters from the ground, therefore limiting its field of view to a very small area. The point of this is to rely more on the image registration and decision making processes to try to prove robustness of those systems. Below are a few images of the turtlebot used.
 
-**turtlebot images**
+![IMG-3920](https://github.com/megsindelar/megsindelar.github.io/assets/87098227/a51027d8-2d79-4267-9334-caa61fa26925)
+
+![IMG-3931](https://github.com/megsindelar/megsindelar.github.io/assets/87098227/65b3a474-845b-48f4-96f3-65fc9a39786c)
 
 For my SLAM system I use estimated turtlebot poses based on wheel encoder odometry and visual measurements for loop closure to update the graph. I utilize the SE-Sync system to update each node position based on individual information matrices, where I configure them to rely more on the visual loop closure measurements than the wheel odometry.
 

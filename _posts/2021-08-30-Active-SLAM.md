@@ -4,7 +4,7 @@ read_time: false
 show_date: false
 title: "Sindelar - Active SLAM"
 # date: 2021-01-06 #2021-01 - 2021-06
-# img: posts/Header/drift_parking_car.gif
+img: posts/Header/active_slam.gif
 # tags: [C++, OpenCV]
 # category: 
 author: Meg Sindelar

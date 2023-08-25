@@ -44,6 +44,7 @@ Therefore, it was decided to instead pivot to computing the mean-squared error b
 An image of the reconstructed poster can be seen below.
 
 **reconstructed poster**
+![loop6_before_and_after](https://github.com/megsindelar/megsindelar.github.io/assets/87098227/9db6d80d-b079-4aa7-9fc4-ba63d1aa12a4)
 
 The decision making process currently consists of waypoint planning with loops triggered every specific number of nodes. The Phd student I was working with will next use my system to implement his ergodic metric algorithm for the decision making part of this system.
 

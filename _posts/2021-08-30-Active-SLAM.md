@@ -21,6 +21,10 @@ Hardware: Turtlebot3, Raspberry Pi, Raspberry Pi Cam V2, OpenCR board, RGB LEDS
 
 Github link: [Github](https://github.com/megsindelar/active_slam)
 
+Below are images of the poster reconstruction before (left) and after (right) a loop closure.
+
+![loop6_before_and_after](https://github.com/megsindelar/megsindelar.github.io/assets/87098227/9db6d80d-b079-4aa7-9fc4-ba63d1aa12a4)
+
 Below is a block diagram for the entire active SLAM system:
 
 ![Screenshot from 2023-08-25 09-18-27](https://github.com/megsindelar/megsindelar.github.io/assets/87098227/63bfb8af-99f7-4373-95ef-4253298552fa)
@@ -40,11 +44,6 @@ The visual measurements are supposed to come into play to offset the wheel odom 
 I tried making all the tests as strict as possible, however not enough loops were detected and the wheel odometry went uncorrected for too long. But, if I made some of the tests a little more lenient, it would lead to too many inaccurate false positives.
 
 Therefore, it was decided to instead pivot to computing the mean-squared error between images nearby the designated looping node and use the best image and location from that test as a loop. This method proved to be good for a small loop, however when continuing to find more, the uncertainty in wheel odometry would again increase greatly because the focus of the project switched from less active SLAM to more visual search to demonstrate a comparison and proof of concept loops.
-
-An image of the reconstructed poster can be seen below.
-
-**reconstructed poster**
-![loop6_before_and_after](https://github.com/megsindelar/megsindelar.github.io/assets/87098227/9db6d80d-b079-4aa7-9fc4-ba63d1aa12a4)
 
 The decision making process currently consists of waypoint planning with loops triggered every specific number of nodes. The Phd student I was working with will next use my system to implement his ergodic metric algorithm for the decision making part of this system.
 

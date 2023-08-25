@@ -25,6 +25,8 @@ Below are images of the poster reconstruction before (left) and after (right) a 
 
 ![loop6_before_and_after](https://github.com/megsindelar/megsindelar.github.io/assets/87098227/9db6d80d-b079-4aa7-9fc4-ba63d1aa12a4)
 
+Notice that the one on the right is more accuracte because the images are more in a square shape, which aligns more correctly with the poster because the turtlebot drove in a perfect square.
+
 Below is a block diagram for the entire active SLAM system:
 
 ![Screenshot from 2023-08-25 09-18-27](https://github.com/megsindelar/megsindelar.github.io/assets/87098227/63bfb8af-99f7-4373-95ef-4253298552fa)

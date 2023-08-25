@@ -35,20 +35,32 @@ In this system, the camera is mounted on the turtlebot so that it is only 0.7 me
 
 For my SLAM system I use estimated turtlebot poses based on wheel encoder odometry and visual measurements for loop closure to update the graph. I utilize the SE-Sync system to update each node position based on individual information matrices, where I configure them to rely more on the visual loop closure measurements than the wheel odometry.
 
-Originally, I had three tests to try to verify if the loop closure was a real loop or a false positive. In graph-based SLAM, it is crucial to not let any false positive loops through, because while loop closures help to update and optimize the graph, a false positive completely messes the graph up and hurts the graph a lot more than a true positive helps. My tests for this problem included utilizing bag of words within a circular region around the turtlebot, along with then comparing top candidates to odom distances and OpenCV matcher distances. The combination of these three seemed reasonable, however it was due to hardware limitations that this combination of tests was unreliable. 
+The decision making process currently consists of waypoint planning with loops triggered every specific number of nodes. When the turtlebot reaches the desired loop-back node, the turtlebot performs a local visual search for the real loop.  The Phd student I was working with will next use my system to implement his ergodic metric algorithm for the decision making part of this system.
 
-First off, the wheel odometry is never perfectly accuate due to wheel slippage and/or the wheels getting stuck on small bumps, such as dirt and pebbles tracked in, on the floor. The wheel odometry would also suffer if the turtlebot went off the poster enough, and would get stuck trying to get back onto the poster. Anything that made the turtlebot stuck, even for a little would greatly accumulate over time. This made it difficult to threshold the odom distance metric if the loop was a true positive. If the graph was built with too many nodes and not enough loop closures, then the wheel odometry would be too far away to detect a true positive loop. 
 
-The visual measurements are supposed to come into play to offset the wheel odom issues. However, due to hardware limitations there too, image registration techniques only worked so well. The Raspberry Pi camera has limited resolution for each frame, which led to the image registration bag of words metrics and OpenCV matches distances varying greatly in identical tests. Therefore it became unreasonable to try to threshold these in combination with the wheel odometry. 
+**Decision behind visual search**
 
-I tried making all the tests as strict as possible, however not enough loops were detected and the wheel odometry went uncorrected for too long. But, if I made some of the tests a little more lenient, it would lead to too many inaccurate false positives.
+Originally, instead of a visual search, I had three tests to try to verify if the loop closure was a real loop or a false positive. 
 
-Therefore, it was decided to instead pivot to computing the mean-squared error between images nearby the designated looping node and use the best image and location from that test as a loop. This method proved to be good for a small loop, however when continuing to find more, the uncertainty in wheel odometry would again increase greatly because the focus of the project switched from less active SLAM to more visual search to demonstrate a comparison and proof of concept loops.
+In graph-based SLAM, it is crucial to not let any false positive loops through, because while loop closures help to update and optimize the graph, a false positive completely messes the graph up and hurts the graph a lot more than a true positive helps. My tests for this problem included utilizing bag of words within a circular region around the turtlebot, along with then comparing top candidates to odom distances and OpenCV matcher distances.
 
-The decision making process currently consists of waypoint planning with loops triggered every specific number of nodes. The Phd student I was working with will next use my system to implement his ergodic metric algorithm for the decision making part of this system.
+However, due to hardware limitations, this combination of tests was unreliable. I tried making all the tests as strict as possible, however not enough loops were detected and the wheel odometry went uncorrected for too long. But, if I made some of the tests a little more lenient, it would lead to too many inaccurate false positives.
+
+First off, the wheel odometry would suffer from wheel slippage, getting stuck on small bumps, such as dirt and pebbles tracked in, on the floor, and getting stuck if the turtlebot went off the poster and attempted to get back on. The error would greatly accumulate over time if the graph was built with too many nodes and not enough true positive loop closures.
+
+The visual measurements are supposed to come into play to offset the wheel odom issues. However, due to hardware limitations there too, image registration techniques only worked so well. The Raspberry Pi camera has limited resolution for each frame, which led to the image registration bag of words metrics and OpenCV matches distances values varying greatly in identical tests. It became unreasonable to try to threshold these in combination with the wheel odometry. 
+
+Therefore, it was decided to instead pivot to a local visual search technique. A diagram of the idea of the visual search can be seend below.
+
+![Visual_Search_](https://github.com/megsindelar/megsindelar.github.io/assets/87098227/0c8454b9-6864-410e-bf8e-812292ed3472)
+
+During this search, the mean-squared error would be computed between the loop node image and each scan node image. The best image and location from that test was used as a loop. This method proved to be good for a small loop, however this method would still allow false positives when the uncertainty in wheel odometry would become too high. 
+
+The focus of the project became weighted more on the visual search technique to demonstrate a comparison and proof of concept loops.
 
 
 **Future improvements**
+
 If I had more time, I would maybe try to combine the local visual search MSE with bag of words and then increase the desire for more visual searches. Finding more true positive loops would help the turtlebot to continually update its odometry so it doesn't veer off too much.
 
 

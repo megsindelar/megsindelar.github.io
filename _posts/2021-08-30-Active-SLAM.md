@@ -23,7 +23,7 @@ Github link: [Github](https://github.com/megsindelar/active_slam)
 
 Below is a block diagram for the entire active SLAM system:
 
-![block_diag_active_slam](https://github.com/megsindelar/megsindelar.github.io/assets/87098227/20f29036-a69e-4564-8f3f-12e351322b8d)
+![Screenshot from 2023-08-25 09-18-27](https://github.com/megsindelar/megsindelar.github.io/assets/87098227/63bfb8af-99f7-4373-95ef-4253298552fa)
 
 In this system, the camera is mounted on the turtlebot so that it is only 0.7 meters from the ground, therefore limiting its field of view to a very small area. The point of this is to rely more on the image registration and decision making processes to try to prove robustness of those systems. Below are a few images of the turtlebot used.
 

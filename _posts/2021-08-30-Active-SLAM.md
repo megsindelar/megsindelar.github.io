@@ -13,7 +13,7 @@ description:
 The goal of this project was to create an active pose-graph SLAM architecture using visual measurements on a physical system to maneuver around a poster board and be able 
 to localize and recreate a map of the environment. There is a large focus on the visual search of this project.
 
-{% include youtube.html id="wC03MrdOM5E" %}
+{% include youtube.html id="yB6os3cmF2M" %}
 
 Software: C++, OpenCV, SESync, Sophus, Eigen, TEASER
 

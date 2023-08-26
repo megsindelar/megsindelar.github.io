@@ -5,7 +5,7 @@ show_date: false
 title: "Sindelar - Active SLAM"
 # date: 2021-01-06 #2021-01 - 2021-06
 img: posts/Header/active_slam_.gif
-# tags: [C++, OpenCV]
+# tags: [C++, ROS2, OpenCV]
 # category: 
 author: Meg Sindelar
 description: 
@@ -15,7 +15,7 @@ to localize and recreate a map of the environment. There is a large focus on the
 
 {% include youtube.html id="yB6os3cmF2M" %}
 
-Software: C++, OpenCV, SESync, Sophus, Eigen, TEASER
+Software: C++, ROS2, OpenCV, SESync, Sophus, Eigen, TEASER
 
 Hardware: Turtlebot3, Raspberry Pi, Raspberry Pi Cam V2, OpenCR board, RGB LEDS
 
@@ -52,7 +52,7 @@ First off, the wheel odometry would suffer from wheel slippage, getting stuck on
 
 The visual measurements are supposed to come into play to offset the wheel odom issues. However, due to hardware limitations there too, image registration techniques only worked so well. The Raspberry Pi camera has limited resolution for each frame, which led to the image registration bag of words metrics and OpenCV matches distances values varying greatly in identical tests. It became unreasonable to try to threshold these in combination with the wheel odometry. 
 
-Therefore, it was decided to instead pivot to a local visual search technique. A diagram of the idea of the visual search can be seend below.
+Therefore, it was decided to instead pivot to a local visual search technique. A diagram of the idea of the visual search can be seen below.
 
 ![Visual_Search_](https://github.com/megsindelar/megsindelar.github.io/assets/87098227/0c8454b9-6864-410e-bf8e-812292ed3472)
 

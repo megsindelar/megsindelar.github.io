@@ -3,7 +3,7 @@ title: Megan Sindelar Portfolio
 description: 'A collection of projects.' # this means to ignore newlines until "baseurl:"
 permalink: ':title:output_ext'
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "megsindelar.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "meg-sindelar.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 logo: "/assets/img/branding/portfolio_name_dark.png"
 
